@@ -47,7 +47,7 @@ button {
   height: 40px;
   border-radius: 5px;
   font-size: 1rem;
-  background-color: rgb(5, 80, 5);
+  background-color: #596d48;
   color: rgba(255, 255, 255, 0.795);
   padding: 10px;
 }
@@ -63,12 +63,14 @@ label {
   text-transform: uppercase;
 }
 input {
-  height: 24px;
+  height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.226);
   border-radius: 5px;
+  padding: 5px 10px;
 }
 input:focus {
   border-color: blue;
+  outline: none;
 }
 a {
   text-decoration: none;
