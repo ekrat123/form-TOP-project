@@ -1,12 +1,10 @@
-const form = document.getElementsByTagName("form");
+const form = document.getElementById("sign-up");
 const password = document.querySelector('input[name="password"]');
 const confirmPassword = document.querySelector(
   'input[name="confirm-password"]'
 );
 
-console.log(form);
-
-form.addEventListener("submit", (e) => {
+function checkPassword(e) {
   e.preventDefault();
   if (password.value !== confirmPassword.value) {
     alert("Password and confirm password didn't match");
@@ -15,4 +13,6 @@ form.addEventListener("submit", (e) => {
   } else {
     alert("Account created successfully");
   }
-});
+}
+
+form.addEventListener("submit", checkPassword);
